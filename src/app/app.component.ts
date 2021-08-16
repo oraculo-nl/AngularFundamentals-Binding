@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 class Antwoord {
   eigenschap() {
@@ -27,6 +28,8 @@ export class AppComponent {
   parameter = "TypeScript";
 
   tweeWeg:any = "bla";
+
+  reactiveInput = new FormControl('')
 
   clickButton(param?:string):void {
     if (param)

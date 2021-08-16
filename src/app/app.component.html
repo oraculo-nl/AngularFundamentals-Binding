@@ -44,6 +44,10 @@ Met hashtag (#) variabelen:<br>
 
 <h3>2-way binding</h3>
 
+<h5>Template driven</h5>
 <input [(ngModel)]="tweeWeg">{{tweeWeg}}
+
+<h5>Reactive</h5>
+<input [formControl]="reactiveInput"> {{reactiveInput.value}}
 
 <router-outlet></router-outlet>
