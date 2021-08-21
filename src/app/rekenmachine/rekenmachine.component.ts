@@ -34,4 +34,12 @@ export class RekenmachineComponent implements OnInit {
     this.currentCaretLocation = event.target.selectionStart;
   }
 
+  onCalcResult() : void {
+    this.invoer.setValue(this.parse(this.invoer.value));
+  }
+
+  parse(str:string) {
+    return new Function(`'use strict'; return (${str})`)();
+  }
+
 }
