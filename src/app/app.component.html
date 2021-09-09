@@ -1,6 +1,5 @@
 {{title}}
 
-
 <h3>Interpolation</h3>
 
 {{"bla"}}<br>
@@ -50,10 +49,11 @@ Met hashtag (#) variabelen:<br>
 <h5>Reactive</h5>
 <input [formControl]="reactiveInput"> {{reactiveInput.value}}
 <br><br>
-<a [routerLink]="['/rekenmachine']">Rekenmachine</a>
 
 
-<router-outlet></router-outlet>
-
-
+<h1>Opdracht Rekenmachine</h1>
+Zie cursusmateriaal
+De component kun je in deze pagina toevoegen door de RekenmachineComponent toe te voegen aan de declarations array in app.module.ts
+en vervolgens de css selector van de @Component decorator hier toe te voegen, bijv:
+&lt;rekenmachine&gt;&lt;/rekenmachine&gt;
 
